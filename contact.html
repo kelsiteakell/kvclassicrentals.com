@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Enquire — KV Classic Rentals Fort Worth</title>
+  <meta name="description" content="Enquire about renting a classic car from KV Classic Rentals in Fort Worth TX. Tell us your date and occasion — we'll be in touch personally." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="nav solid" id="main-nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">KV Classic Rentals</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="fleet.html">The Fleet</a></li>
+        <li><a href="weddings.html">Weddings</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="https://instagram.com/kvclassicrentals" target="_blank">Instagram</a></li>
+        <li><a href="contact.html" class="nav-enquire">Enquire</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle">&#9776;</button>
+    </div>
+  </nav>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="kicker">Get in Touch</span>
+      <h1>Make an Enquiry</h1>
+      <p>No automated systems. Tell us what you have in mind and we'll be in touch personally within 24 hours.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h2>Let's talk about<br/><em>your rental.</em></h2>
+          <p>Whether it's a wedding send-off, a milestone, a photoshoot, or simply an occasion that deserves an extraordinary car — fill in the form and we'll get back to you personally.</p>
+
+          <div class="contact-detail">
+            <span class="contact-detail-label">Email</span>
+            <p class="contact-detail-value"><a href="mailto:info@kvclassicrentals.com">info@kvclassicrentals.com</a></p>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-label">Location</span>
+            <p class="contact-detail-value">Fort Worth, Texas<br/>Serving all of DFW</p>
+          </div>
+
+          <div class="contact-detail">
+            <span class="contact-detail-label">Response time</span>
+            <p class="contact-detail-value">Within 24 hours</p>
+          </div>
+
+          <div class="contact-note">
+            <p>Wedding enquiries</p>
+            <span>For weddings, we recommend reaching out two to three months ahead of your date — especially for the Packard, which books early.</span>
+          </div>
+        </div>
+
+        <div>
+          <!--
+            FORM SETUP INSTRUCTIONS:
+            1. Go to formspree.io and create a free account
+            2. Create a new form — it will give you a form ID
+            3. Replace "YOUR_FORM_ID" in the action below with your actual form ID
+            4. That's it — submissions will email you directly
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First Name</label>
+                <input type="text" id="first-name" name="first_name" required />
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last Name</label>
+                <input type="text" id="last-name" name="last_name" required />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+
+            <div class="form-group">
+              <label for="car">Which car are you interested in?</label>
+              <select id="car" name="car" required>
+                <option value="" disabled selected>Select a car</option>
+                <option value="mustang">1966 Ford Mustang — Self-Drive, from $500</option>
+                <option value="packard">The Packard — Chauffeured, from $1,500</option>
+                <option value="third">The Third Classic — Chauffeured, available end of May</option>
+                <option value="unsure">Not sure yet — tell me more</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="date">Preferred Date</label>
+              <input type="date" id="date" name="preferred_date" />
+            </div>
+
+            <div class="form-group">
+              <label for="occasion">What's the occasion?</label>
+              <select id="occasion" name="occasion">
+                <option value="" disabled selected>Select an occasion</option>
+                <option value="wedding">Wedding</option>
+                <option value="anniversary">Anniversary</option>
+                <option value="birthday">Birthday or milestone</option>
+                <option value="photoshoot">Photo or film shoot</option>
+                <option value="drive">I just want to drive it</option>
+                <option value="corporate">Corporate or event</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Anything else we should know?</label>
+              <textarea id="message" name="message" placeholder="Tell us about your plans, any specific requirements, or questions you have..."></textarea>
+            </div>
+
+            <!-- Hidden field to catch spam -->
+            <input type="text" name="_gotcha" style="display:none;" />
+
+            <div style="margin-top:0.5rem;">
+              <button type="submit" class="btn btn--dark" style="width:100%;text-align:center;font-family:var(--font-sans);">Send Enquiry</button>
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-masthead">
+        <p class="footer-name">KV Classic Rentals</p>
+        <p class="footer-place">Fort Worth, Texas &nbsp;·&nbsp; Restored Classics for Rent</p>
+      </div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <span class="footer-col-label">The Fleet</span>
+          <a href="mustang.html">1966 Ford Mustang</a>
+          <a href="packard.html">The Packard</a>
+          <a href="fleet.html">View All</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Navigate</span>
+          <a href="index.html">Home</a>
+          <a href="weddings.html">Weddings</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Enquire</a>
+          <a href="https://instagram.com/kvclassicrentals" target="_blank">Instagram</a>
+        </div>
+        <div class="footer-col">
+          <span class="footer-col-label">Contact</span>
+          <p>Fort Worth, Texas</p>
+          <a href="mailto:info@kvclassicrentals.com" class="footer-email">info@kvclassicrentals.com</a>
+          <p style="margin-top:0.5rem;font-size:0.8rem;font-family:var(--font-sans);letter-spacing:0.05em;color:rgba(245,240,232,0.2);">Serving Fort Worth &amp; all of DFW</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KV Classic Rentals &nbsp;·&nbsp; All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    // Pre-select car from URL param e.g. contact.html?car=mustang
+    const params = new URLSearchParams(window.location.search);
+    const carParam = params.get('car');
+    if (carParam) {
+      const select = document.getElementById('car');
+      if (select) {
+        const option = Array.from(select.options).find(o => o.value === carParam);
+        if (option) select.value = carParam;
+      }
+    }
+  </script>
+</body>
+</html>
