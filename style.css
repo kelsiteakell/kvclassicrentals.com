@@ -242,3 +242,18 @@ em { font-style: italic; }
   .sendoff-grid { grid-template-columns: 1fr; gap: 3rem; }
   .footer-cols { grid-template-columns: 1fr; }
 }
+
+/* Enquiry form submission status */
+.form-status {
+  margin-top: 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  line-height: 1.6;
+}
+.form-status--success {
+  color: #2f6b3a;
+}
+.form-status--error {
+  color: #a13f3f;
+}
